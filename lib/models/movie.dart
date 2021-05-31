@@ -34,7 +34,7 @@ List<Movie> movies = [
     rating: 7.3,
     criticsReview: 50,
     metascoreRating: 76,
-    genre: ["Action", "Drama"],
+    genre: ["Ação", "Drama"],
     plot: plotText,
     cast: [
       {
@@ -69,7 +69,7 @@ List<Movie> movies = [
     rating: 8.2,
     criticsReview: 50,
     metascoreRating: 76,
-    genre: ["Action", "Biography", "Drama"],
+    genre: ["Ação", "Documentário", "Drama"],
     plot: plotText,
     cast: [
       {
@@ -95,7 +95,7 @@ List<Movie> movies = [
     ],
   ),
   Movie(
-    id: 1,
+    id: 3,
     title: "Onward",
     year: 2020,
     poster: "assets/images/poster_3.jpg",
@@ -104,7 +104,7 @@ List<Movie> movies = [
     rating: 7.6,
     criticsReview: 50,
     metascoreRating: 79,
-    genre: ["Action", "Drama"],
+    genre: ["Ação", "Drama"],
     plot: plotText,
     cast: [
       {
