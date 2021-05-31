@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_info/models/movie.dart';
+import 'package:movie_info/screens/Details/components/backdrop_rating.dart';
+import 'package:movie_info/screens/Details/components/title_duration.dart';
 
 class Body extends StatelessWidget {
   final Movie movie;
@@ -10,25 +12,8 @@ class Body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Column(
       children: [
-        Container(
-          height: size.height * 0.4,
-          child: Stack(
-            children: [
-              Container(
-                height: size.height * 0.4 - 50,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(50),
-                  ),
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(movie.backdrop),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        )
+        BackAndDropRating(size: size, movie: movie),
+        TitleDurationFabBtn(movie: movie),
       ],
     );
   }
